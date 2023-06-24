@@ -31,5 +31,13 @@ public class UserService {
 		userMapper.editUser(userList);
 	}
 
+	public UserList targetUser(int user_id) {
+		return userMapper.targetUser(user_id);
+	}
+
+	public void deleteUser(int user_id) {
+		userMapper.deleteUser(user_id);
+	}
+
 
 }
