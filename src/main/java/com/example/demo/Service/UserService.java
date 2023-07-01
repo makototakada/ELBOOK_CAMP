@@ -40,4 +40,10 @@ public class UserService {
 	}
 
 
+	public void createUser(UserList userList) {
+		String encodedpass = passwordEncoder.encode(userList.getPass());
+		userList.setPass(encodedpass);
+		userMapper.createUser(userList);
+	}
+
 }

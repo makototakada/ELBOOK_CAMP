@@ -47,6 +47,17 @@ public class UserController {
 		userService.deleteUser(user_id);
 		return "redirect:/user/list";
 	}
-	
+
+	@GetMapping("/createview")
+	public String moveCreateView() {
+		return "usercreate";
+	}
+
+	@PostMapping("/usercreate")
+	public String createUser(@ModelAttribute("createUser") UserList userList) {
+		//System.out.println(userList);
+		userService.createUser(userList);
+		return "redirect:/user/list";
+	}
 
 }

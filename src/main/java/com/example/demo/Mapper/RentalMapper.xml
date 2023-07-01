@@ -25,6 +25,7 @@
 
 		
 	</select>
+	
 	<update  id="returnBook" parameterType="com.example.demo.Entity.Rental"> 
 		UPDATE	EL_RENT
 		SET		dlt_flg = 1
