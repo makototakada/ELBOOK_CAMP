@@ -1,6 +1,6 @@
 # ELBOOK2022
 
-
+作成する。
 ELBOOK2022/src/main/resources/application.properties
 
 ```
